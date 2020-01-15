@@ -1,0 +1,15 @@
+{% if choice_list %}
+    <h3>{{ choice_list.0.question}}</h3>
+    <ol>
+        {% for choice in choice_list %}
+            <li>
+                Choice : {{choice.choice_text}}
+                <br>
+                Votes : {{choice.votes}}
+                <br>
+                <br>
+            </li>
+        {% endfor %}
+    </ol>
+
+{% endif %}
